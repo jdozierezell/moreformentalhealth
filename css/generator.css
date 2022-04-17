@@ -1,0 +1,387 @@
+
+#generator_holder {background:#342F7F; padding:0 0 50px 0;}
+
+#project_holder {margin:0 auto; width:100%; z-index:1; visibility:hidden; position:relative;}
+#project_holder.shown {visibility: visible;}
+
+#project_holder:after {content:" "; clear:both; display:table;}
+
+#project_canvas-wrapper {max-width:513px; width:100%; position:relative; margin:0 auto;}
+#project_canvas {max-width:513px; width:100%; position:relative; padding-bottom:100%; z-index:1;}
+#project_controls-holder {max-width:350px; z-index:2; margin:0 auto;}
+
+#canvas_holder {width:1080px; height:1080px; box-sizing:border-box; overflow:hidden; position:absolute; left:0; top:0; transform-origin:left top;}
+
+
+#canvas {width:1080px; height:1080px; border:1px black solid; box-sizing:border-box; overflow:hidden; display:none;}
+
+#cavnas-render {display:none; width:1080px; height:1080px;}
+
+#canvas_inner {width:1008px; height:1080px; overflow:hidden; position:absolute; top:0; left:36px; text-transform:uppercase; font-family:"ABCGravityVariable", sans-serif; font-stretch:100%; text-align:center; white-space:nowrap; font-feature-settings: "ss16" 1;}
+#canvas_inner span.slogan_line {display:block; width:1008px; position:absolute; left:0; color:#b3b3b3; font-family:"ABCGravityVariable", sans-serif; text-transform:uppercase; font-stretch:100%; text-align:center; font-size:128.5px; line-height:90px; font-feature-settings: "ss16" 1;}
+#canvas_inner span#slogan_line1 {top:44px;}
+#canvas_inner span#slogan_line2 {top:840px;}
+
+#canvas_inner #canvas_lines {position:relative; top:0;}
+#canvas_inner #canvas_lines span.canvas_line {display:block; width:1008px; position:relative;}
+#canvas_inner #canvas_lines span.hide_line {display:none;}
+
+#canvas_holder.canvas_holder1 #canvas_inner #canvas_lines {top:190px;}
+#canvas_holder.canvas_holder1 #canvas_inner #canvas_lines span.canvas_line {font-size:952.6px; line-height:667px;}
+
+#canvas_holder.canvas_holder2 #canvas_inner #canvas_lines {top:166px;}
+#canvas_holder.canvas_holder2 #canvas_inner #canvas_lines span.canvas_line {font-size:462px; line-height:323.5px; margin-bottom:20px;}
+
+#canvas_holder.canvas_holder3 #canvas_inner #canvas_lines {top:159px;}
+#canvas_holder.canvas_holder3 #canvas_inner #canvas_lines span.canvas_line {font-size:298.5px; line-height:209px; margin-bottom:20px;}
+
+#canvas_footer {background:#000; position:absolute; left:0; right:0; bottom:0; width:100%; height:132px; color:#fff;}
+#canvas_footer1 {display:block; position:absolute; left:36px; top:24px; font-family:'PaulGroteskSoft-Bold', sans-serif; font-weight:400; font-size:36px;}
+#canvas_footer2 {display:block; position:absolute; left:36px; top:70px; font-family:'AvenirNextLTPro-Medium', sans-serif; font-weight:400; font-size:27px;}
+#canvas_footer3 {display:block; position:absolute; right:36px; top:36px; font-family:'PaulGroteskSoft-Bold', sans-serif; font-weight:400; font-size:36px; text-align:right;}
+
+#project_controls {max-width:350px; margin:0; width:100%;}
+#project_controls h4 {margin:0 0 10px 0; padding:0; color:#FFFF00; font-family:'AvenirNextLTPro-Bold', sans-serif; font-weight:400; font-size:18px;}
+#project_controls h4 em {font-family:'AvenirNextLTPro-It', sans-serif; font-style:normal; font-weight:400;}
+#project_name-input h4 {line-height:24px; margin-bottom:4px;}
+#project_controls .project_required {color:#FF66FF; opacity:0;}
+
+#generator_holder.project_button-error .project_required {opacity:1;}
+
+/*
+.project_bg-choose.project_bg-selected {border:1px black solid;}
+.project_sloganfont-choose.project_sloganfont-selected {border:1px black solid;}*/
+
+#project_holder.bgcolor-0 #canvas_holder {background:#fff;}
+#project_holder.bgcolor-1 #canvas_holder {background:#FFFF00;}
+#project_holder.bgcolor-2 #canvas_holder {background:#A2FF00;}
+#project_holder.bgcolor-3 #canvas_holder {background:#00FFFF;}
+#project_holder.bgcolor-4 #canvas_holder {background:#3347FF;}
+#project_holder.bgcolor-5 #canvas_holder {background:#CB30FF;}
+#project_holder.bgcolor-6 #canvas_holder {background:#FF66FF;}
+#project_holder.bgcolor-7 #canvas_holder {background:#FF396D;}
+#project_holder.bgcolor-8 #canvas_holder {background:#FEBE01;}
+
+#project_holder.sloganfontcolor-0 #canvas_holder #canvas_inner span.slogan_line {color:#b3b3b3;}
+#project_holder.sloganfontcolor-1 #canvas_holder #canvas_inner span.slogan_line {color:#FFFF00;}
+#project_holder.sloganfontcolor-2 #canvas_holder #canvas_inner span.slogan_line {color:#A2FF00;}
+#project_holder.sloganfontcolor-3 #canvas_holder #canvas_inner span.slogan_line {color:#00FFFF;}
+#project_holder.sloganfontcolor-4 #canvas_holder #canvas_inner span.slogan_line {color:#3347FF;}
+#project_holder.sloganfontcolor-5 #canvas_holder #canvas_inner span.slogan_line {color:#CB30FF;}
+#project_holder.sloganfontcolor-6 #canvas_holder #canvas_inner span.slogan_line {color:#FF66FF;}
+#project_holder.sloganfontcolor-7 #canvas_holder #canvas_inner span.slogan_line {color:#FF396D;}
+#project_holder.sloganfontcolor-8 #canvas_holder #canvas_inner span.slogan_line {color:#FEBE01;}
+
+#project_holder.demandfontcolor-0 #canvas_holder {color:#000;}
+#project_holder.demandfontcolor-1 #canvas_holder {color:#FFFF00;}
+#project_holder.demandfontcolor-2 #canvas_holder {color:#A2FF00;}
+#project_holder.demandfontcolor-3 #canvas_holder {color:#00FFFF;}
+#project_holder.demandfontcolor-4 #canvas_holder {color:#3347FF;}
+#project_holder.demandfontcolor-5 #canvas_holder {color:#CB30FF;}
+#project_holder.demandfontcolor-6 #canvas_holder {color:#FF66FF;}
+#project_holder.demandfontcolor-7 #canvas_holder {color:#FF396D;}
+#project_holder.demandfontcolor-8 #canvas_holder {color:#FEBE01;}
+
+
+#project_holder.bgcolor-0 #canvas_holder #canvas_footer {color:#fff;}
+#project_holder.bgcolor-1 #canvas_holder #canvas_footer {color:#FFFF00;}
+#project_holder.bgcolor-2 #canvas_holder #canvas_footer {color:#A2FF00;}
+#project_holder.bgcolor-3 #canvas_holder #canvas_footer {color:#00FFFF;}
+#project_holder.bgcolor-4 #canvas_holder #canvas_footer {color:#3347FF;}
+#project_holder.bgcolor-5 #canvas_holder #canvas_footer {color:#CB30FF;}
+#project_holder.bgcolor-6 #canvas_holder #canvas_footer {color:#FF66FF;}
+#project_holder.bgcolor-7 #canvas_holder #canvas_footer {color:#FF396D;}
+#project_holder.bgcolor-8 #canvas_holder #canvas_footer {color:#FEBE01;}
+
+#project_holder.demandfontcolor-0 #canvas_holder #canvas_footer {background:#000;}
+#project_holder.demandfontcolor-1 #canvas_holder #canvas_footer {background:#FFFF00;}
+#project_holder.demandfontcolor-2 #canvas_holder #canvas_footer {background:#A2FF00;}
+#project_holder.demandfontcolor-3 #canvas_holder #canvas_footer {background:#00FFFF;}
+#project_holder.demandfontcolor-4 #canvas_holder #canvas_footer {background:#3347FF;}
+#project_holder.demandfontcolor-5 #canvas_holder #canvas_footer {background:#CB30FF;}
+#project_holder.demandfontcolor-6 #canvas_holder #canvas_footer {background:#FF66FF;}
+#project_holder.demandfontcolor-7 #canvas_holder #canvas_footer {background:#FF396D;}
+#project_holder.demandfontcolor-8 #canvas_holder #canvas_footer {background:#FEBE01;}
+
+/* Text Input */
+#project_text-input {margin:0 0 30px 0;}
+#project_text-input h4 {}
+#project_text-input p {margin:0 0 6px 0; padding:0; font-family:"AvenirNextLTPro-Medium", sans-serif; font-size:16px; color:#FFFF00; line-height:21px;}
+#project_text-input div {margin:0 0 4px 0;}
+#project_text-input .project_controls-field {width:100%; background:#FFFF00; border:none; color:#342F7F; font-family:"AvenirNextLTPro-Medium", sans-serif; font-size:18px; border-radius:0;}
+
+/* Name Input */
+#project_name-input {margin:0 0 30px 0;}
+#project_name-input h4 {}
+#project_name-input div {margin:0 0 4px 0;}
+#project_name-input .project_name-field {width:100%; background:#FFFF00; border:none; color:#342F7F; font-family:"AvenirNextLTPro-Medium", sans-serif; font-size:18px; border-radius:0;}
+
+/* Color Choices */
+.choice_holder {width:100%; position:relative;}
+.project_choice-check {display:none; width:24px; height:19px; background:url("../images/check-mark.svg") 0 0 no-repeat; background-size:24px 19px; position:absolute; top:7px; left:5px; pointer-events: none;}
+
+/* Background Color Choices */
+#project_bg-choose {margin:0 0 30px 0; width:100%;}
+.project_bg-choice-holder {display:block; float:left; width:30px; height:30px; margin:0 5px 10px 0; position:relative;}
+.project_bg-choice-holder label {display:block; width:30px; height:30px; position:relative; text-indent:-9999px; overflow:hidden; border-radius:50%; cursor:pointer;}
+
+.project_bg-choice-holder label[for=project_bg-choice1] {background:#FFFF00;}
+.project_bg-choice-holder label[for=project_bg-choice2] {background:#A2FF00;}
+.project_bg-choice-holder label[for=project_bg-choice3] {background:#00FFFF;}
+.project_bg-choice-holder label[for=project_bg-choice4] {background:#3347FF;}
+.project_bg-choice-holder label[for=project_bg-choice5] {background:#CB30FF;}
+.project_bg-choice-holder label[for=project_bg-choice6] {background:#FF66FF;}
+.project_bg-choice-holder label[for=project_bg-choice7] {background:#FF396D;}
+.project_bg-choice-holder label[for=project_bg-choice8] {background:#FEBE01;}
+
+.project_bg-choice-holder input:checked + label {border:4px #fff solid;}
+.project_bg-choice-holder input:checked + label + span.project_choice-check {display:block;}
+
+.project_bg-choice-holder input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Demand Color Choices */
+#project_demandfont-choose {margin:0 0 30px 0;}
+.project_demandfont-choice-holder {display:block; float:left; width:30px; height:30px; margin:0 5px 10px 0; position:relative;}
+.project_demandfont-choice-holder label {display:block; width:30px; height:30px; position:relative; text-indent:-9999px; overflow:hidden; border-radius:50%; cursor:pointer;}
+
+.project_demandfont-choice-holder label[for=project_demandfont-choice1] {background:#FFFF00;}
+.project_demandfont-choice-holder label[for=project_demandfont-choice2] {background:#A2FF00;}
+.project_demandfont-choice-holder label[for=project_demandfont-choice3] {background:#00FFFF;}
+.project_demandfont-choice-holder label[for=project_demandfont-choice4] {background:#3347FF;}
+.project_demandfont-choice-holder label[for=project_demandfont-choice5] {background:#CB30FF;}
+.project_demandfont-choice-holder label[for=project_demandfont-choice6] {background:#FF66FF;}
+.project_demandfont-choice-holder label[for=project_demandfont-choice7] {background:#FF396D;}
+.project_demandfont-choice-holder label[for=project_demandfont-choice8] {background:#FEBE01;}
+
+.project_demandfont-choice-holder input:checked + label {border:4px #fff solid;}
+.project_demandfont-choice-holder input:checked + label + span.project_choice-check {display:block;}
+
+.project_demandfont-choice-holder input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Slogan Color Choices */
+.project_sloganfont-choice-holder {display:block; float:left; width:30px; height:30px; margin:0 5px 10px 0; position:relative;}
+.project_sloganfont-choice-holder label {display:block; width:30px; height:30px; position:relative; text-indent:-9999px; overflow:hidden; border-radius:50%; cursor:pointer;}
+
+.project_sloganfont-choice-holder label[for=project_sloganfont-choice1] {background:#FFFF00;}
+.project_sloganfont-choice-holder label[for=project_sloganfont-choice2] {background:#A2FF00;}
+.project_sloganfont-choice-holder label[for=project_sloganfont-choice3] {background:#00FFFF;}
+.project_sloganfont-choice-holder label[for=project_sloganfont-choice4] {background:#3347FF;}
+.project_sloganfont-choice-holder label[for=project_sloganfont-choice5] {background:#CB30FF;}
+.project_sloganfont-choice-holder label[for=project_sloganfont-choice6] {background:#FF66FF;}
+.project_sloganfont-choice-holder label[for=project_sloganfont-choice7] {background:#FF396D;}
+.project_sloganfont-choice-holder label[for=project_sloganfont-choice8] {background:#FEBE01;}
+
+.project_sloganfont-choice-holder input:checked + label {border:4px #fff solid;}
+.project_sloganfont-choice-holder input:checked + label + span.project_choice-check {display:block;}
+
+.project_sloganfont-choice-holder input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.hide_choice {display:none;}
+.hide_choice2 {display:none;}
+
+
+/* Button */
+#project_button-section {margin:40px auto 0 auto;}
+#project_button-frame {max-width:350px; width:100%; height:48px; margin:0 auto; position:relative; z-index:1;}
+#project_button-frame:after {content:" "; display:block; width:100%; height:48px; position:absolute; background:#cb30ff; right:-5px; bottom:-5px; z-index:1;}
+#project_button {background:#00FFFF; color:#3347ff; z-index:2; position:absolute; left:0; top:0; display:block; width:100%; height:48px; border:none; font-family:"ABCGravityVariable", sans-serif; font-stretch:80%; font-variation-settings: "wdth" 80; font-size:40px; line-height:52px; text-transform:uppercase; cursor:pointer; text-decoration:none; padding:0 8px;
+transition: top ease 0.3s, left ease 0.3s; 
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+appearance: none;
+border-radius: 0;
+}
+#project_button:hover {left:-5px; top:-5px; text-decoration:none;}
+
+#project_button-disabled {display:none;}
+
+#project_button-frame.project_button-disabled {}
+#project_button-frame.project_button-disabled:after {display:none;}
+#project_button-frame.project_button-disabled #project_button {background:#3347ff; color:#342f7f; cursor:auto;}
+#project_button-frame.project_button-disabled #project_button:hover {left:0; top:0;}
+#project_button-frame.project_button-disabled #project_button-disabled {display:block; position:absolute; top:0; bottom:0; left:0; right:0; background-color:transparent; z-index:9;}
+
+#project_button-error {display:none; font-family:"AvenirNextLTPro-Medium", sans-serif; font-size:18px; color:#FF66FF; line-height:18px; position:absolute; left:0; bottom:-30px;}
+#generator_holder.project_button-error #project_button-error {display:block;}
+
+/* Mobile Nav */
+.project_mobile-section {display:none;}
+#project_mobilenav {position:relative; height:45px; z-index:1; max-width:350px; margin:0 auto;}
+#project_mobilenav .project_mobilenav-nav {display:none;}
+#project_mobilenav .project_mobilenav-nav p {color:#fff;}
+
+#project_holder.project_mobilenav-screen1 #project_mobilenav-nav1 {display:block;}
+#project_holder.project_mobilenav-screen1 #project_text-input {display:block; padding-top:6px; margin:10px 0 10px 0;}
+
+#project_holder.project_mobilenav-screen2 #project_mobilenav-nav2 {display:block;}
+#project_holder.project_mobilenav-screen2 #project_controls-right {padding:16px 0 0 0;}
+#project_holder.project_mobilenav-screen2 #project_bg-choose {display:block; margin:0 0 6px 0}
+#project_holder.project_mobilenav-screen2 #project_demandfont-choose {display:block; margin:0 0 6px 0}
+#project_holder.project_mobilenav-screen2 #project_sloganfont-choose {display:block; margin:0 0 6px 0}
+
+#project_holder.project_mobilenav-screen3 #project_mobilenav-nav3 {display:block;}
+#project_holder.project_mobilenav-screen3 #project_name-input {display:block; padding:16px 0 0 0;}
+#project_holder.project_mobilenav-screen3 #project_button-section {display:block; padding-bottom:40px; margin:0 auto 0 auto;}
+
+.project_mobilenav-btn {font-family:"ABCGravityVariable", sans-serif; font-size:18px; font-variation-settings:"wdth" 100; border:none; background-color:transparent; color:#FEBE01; text-transform:uppercase; height:26px; position:absolute; bottom:0; z-index:1;}
+.project_mobilenav-next {right:0; padding:0 16px 0 0; background:url("../images/mobile_next.svg") right 5px no-repeat; background-size:14px 11px; width:70px;}
+.project_mobilenav-prev {left:0; padding:0 0 0 16px; background:url("../images/mobile_prev.svg") left 5px no-repeat; background-size:14px 11px;}
+
+.project_mobilenav-next-block {height:26px; width:70px; position:absolute; bottom:0; right:0; z-index:9; display:none;}
+.project_mobilenav-next-disabled .project_mobilenav-next-block {display:block;}
+.project_mobilenav-next-disabled .project_mobilenav-next {color:#3347FF; background-image:url("../images/mobile_next-disabled.svg");}
+
+#project_mobilenav-nav1 #project_mobilenav-next1 {width:96px;}
+#project_mobilenav-nav1 #project_mobilenav-next1 + .project_mobilenav-next-block {width:96px;}
+
+#project_mobilenav-nav2 #project_mobilenav-next2 {width:74px;}
+#project_mobilenav-nav2 #project_mobilenav-next2 + .project_mobilenav-next-block {width:74px;}
+
+#project_mobilenav-error {display:none; font-family:"AvenirNextLTPro-Medium", sans-serif; font-size:16px; color:#FF66FF; line-height:16px; position:absolute; left:0; top:0;}
+#project_mobilenav.project_mobilenav-error #project_mobilenav-error {display:block;}
+
+
+/* NAV TEST */
+#navtest_section {padding:50px 0; background:#3347ff; margin:0 0 80px 0;}
+#navtest_holder {max-width:820px; margin:0 auto;}
+#navtest_holder a {color:#a2ff00; text-decoration:none; position:relative; height:42px; line-height:42px; font-family:"ABCGravityVariable", sans-serif; font-size:40px; text-transform:uppercase; font-variation-settings: "wdth" 85; transition: font-variation-settings .5s ease-in-out;}
+#navtest_holder a:hover {font-variation-settings:'wdth' 150;}
+#navtest_prev {padding:0 0 0 36px; float:left; background:url("../images/testnav_arrow-prev.png") left center no-repeat;}
+#navtest_next {padding:0 36px 0 0; float:right; background:url("../images/testnav_arrow-next.png") right center no-repeat;}
+
+
+
+
+
+/* Media Queries */
+@media only screen and (min-width:480px) {
+
+#project_mobilenav-error {font-size:18px; line-height:18px;}
+
+}
+
+@media only screen and (min-width:720px) {
+
+}
+
+@media only screen and (min-width:960px) {
+
+}
+
+@media only screen and (min-width:1024px) {
+
+
+#generator_holder {max-width:1100px; margin:0 auto; padding:0 0 100px 0;}
+
+#project_holder {max-width:1150px;}
+
+#project_canvas-wrapper {margin:0; max-width:100%; width:46%; left:29%;}
+
+#project_canvas {max-width:100%;}
+
+#project_text-input p {font-size:18px; line-height:24px;}
+
+#project_controls-holder {width:100%; position:absolute; left:0; top:0; margin:0; max-width:100%;}
+#project_controls {max-width:300px;}
+#project_controls-left {position:absolute; left:0; top:0; width:29%; padding-right:38px;}
+#project_name-input {margin-top:80px;}
+body.nav_opened #project_name-input {margin-top:0;}
+body.nav_opened #project_text-input {margin-bottom:20px;}
+#project_controls-right {width:24%; position:absolute; right:0; top:0; padding-left:34px;}
+#project_bg-choose {max-width:232px; float:right; width:100%;}
+#project_demandfont-choose {max-width:232px; float:right; width:100%;}
+#project_sloganfont-choose {max-width:232px; float:right; width:100%;}
+
+
+#generator_holder {max-width:100%;}
+#project_holder {max-width:100%;}
+#share_gallery-header {max-width:100%;}
+#demand_thumbs {max-width:100%;}
+#share_generator-header {max-width:100%;}
+#project_bg-choose {max-width:100%;}
+#project_demandfont-choose {max-width:100%;}
+#project_sloganfont-choose {max-width:100%;}
+
+
+
+/* Color Choices */
+/*.project_choice-check {width:24px; height:19px; background-size:24px 19px; top:50%; left:50%; transform:translate(-50%, -50%);}*/
+.project_choice-check {
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+/* Background Color Choices */
+.project_bg-choice-holder {width:calc(25% - 8px); height:auto; margin:0 8px 8px 0; padding-top:calc(25% - 8px);}
+.project_bg-choice-holder label {width:100%; height:100%; position:absolute; left:0; top:0;}
+
+/* Demand Color Choices */
+.project_demandfont-choice-holder {width:calc(25% - 8px); height:auto; margin:0 8px 8px 0; padding-top:calc(25% - 8px);}
+.project_demandfont-choice-holder label {width:100%; height:100%; position:absolute; left:0; top:0;}
+
+/* Slogan Color Choices */
+.project_sloganfont-choice-holder {width:calc(25% - 8px); height:auto; margin:0 8px 8px 0; padding-top:calc(25% - 8px);}
+.project_sloganfont-choice-holder label {width:100%; height:100%; position:absolute; left:0; top:0;}
+
+
+/* Button */
+#project_button-section {position:relative;}
+#project_button-holder {position:absolute; top:0; left:29%; max-width:100%; width:46%;}
+#project_button-frame {}
+
+#project_button-frame.project_button-disabled {}
+#project_button-frame.project_button-disabled:after {display:none;}
+#project_button-frame.project_button-disabled #project_button {background:#3347ff; color:#342f7f; cursor:auto;}
+#project_button-frame.project_button-disabled #project_button:hover {left:0; top:0;}
+
+/* Mobile Nav */
+.project_mobile-section {display:block;}
+#project_mobilenav {display:none;}
+
+#project_holder.project_mobilenav-screen1 #project_text-input {padding-top:0; margin: 0 0 30px 0;}
+#project_holder.project_mobilenav-screen2 #project_controls-right {padding:0; min-height:auto;}
+#project_holder.project_mobilenav-screen3 #project_name-input {padding:0;  min-height:auto;}
+#project_holder.project_mobilenav-screen3 #project_button-section {padding-bottom:0; margin:40px auto 0 auto;}
+#project_holder.project_mobilenav-screen2 #project_bg-choose {display:block; margin:0 0 30px 0}
+#project_holder.project_mobilenav-screen2 #project_demandfont-choose {display:block; margin:0 0 30px 0}
+#project_holder.project_mobilenav-screen2 #project_sloganfont-choose {display:block; margin:0 0 30px 0}
+
+
+}
+
+@media only screen and (min-width:1300px) {
+
+#project_name-input {margin-top:80px;}
+body.nav_opened #project_name-input {margin-top:80px;}
+body.nav_opened #project_text-input {margin-bottom:30px;}
+
+}
+
+@media only screen and (min-width:1320px) {
+
+}
+
+@media only screen and (min-width:1600px) {  
+ 
+}
