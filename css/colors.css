@@ -42,10 +42,6 @@
 
 
 /* Care Page Story */
-#demands_story-text h2 {font-family:'PaulGroteskSoft-Bold', Arial, Helvetica,sans-serif; font-weight:400; /*font-size:30px; line-height:33px;*/}
-#demands_story-text h3 {/*font-size: 14px;line-height: 18px;*/ padding: 6px 0 18px;}
-#demands_story-text p {/*font-size: 18px;line-height: 24px;*/ padding: 0 0 40px 0;}
-
 #page.care #demands_story {background:#FFFF00;}
 #page.care #demands_story-text h2 {color:#CB30FF;}
 #page.care #demands_story-text h3 {color:#CB30FF;}

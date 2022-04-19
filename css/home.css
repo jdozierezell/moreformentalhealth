@@ -124,7 +124,7 @@
 #home_demand2-mobile-text3 {display:block; width:100%; position:relative;}
 
 /* Demand 3 */
-#home_demand3 {z-index:1;}
+#home_demand3 {z-index:1; overflow:hidden}
 #home_demand3 a {color:#ff66ff;}
 #home_demand3 a:hover {color:#ff396d;}
 #home_demand3 .home_content {width:100%; max-width:1400px; max-height:1400px; height:54vh;}

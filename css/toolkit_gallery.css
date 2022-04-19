@@ -1,0 +1,155 @@
+
+#demand_thumbs-holder {margin:0 -5px;}
+
+#demand_thumbs {margin:0 auto; text-align:center; max-width:370px;}
+#demand_thumbs .img-thumbnail {border:none; background-color:transparent; width:105px; height:105px;  padding:1px; border-radius:0;}
+#demand_thumbs li {padding:1px; vertical-align:top;}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {height:334px; width:334px; margin:0 auto;}
+.carousel-inner .item a {text-align:center; display:block;}
+
+.modal-backdrop {
+  background-color:#FEBE01;
+}
+
+.modal-backdrop.in {
+  opacity:1;
+}
+
+#myModal {background-color:#FEBE01;}
+
+#myModal .modal-header {border-bottom:none;padding:15px 0 10px 0;}
+#myModal .modal-header .close {color:#fff; float:initial; display:block; margin:0 auto; opacity:initial; text-shadow:none;}
+#myModal .modal-header .close_button {display:block; width:25px; height:25px; background-image:url('../images/modal_close.png'); background-size:contain;}
+
+#myModal .modal-content {background-color:transparent; -webkit-box-shadow:0 0 0 rgba(0,0,0,0); box-shadow:0 0 0 rgba(0,0,0,0); border:none;}
+
+#myModal  .carousel-control.left {background-image:none;}
+#myModal  .carousel-control.right {background-image:none;}
+
+
+#myModal .carousel-control.left .left_arrow {display:block; width:16px; height:27px; background-image:url('../images/modal_left_arrow.png'); background-size:contain; position:absolute; left:0;margin:0;top:153px;}
+#myModal .carousel-control.right .right_arrow {display:block; width:16px; height:27px; background-image:url('../images/modal_right_arrow.png'); background-size:contain; position:absolute;right:0;margin:0;top:153px;}
+
+
+#myModal .modal-footer {border-top:none;}
+
+.share_gallery-link {max-width:356px; width:100%; padding:0; margin:35px auto;}
+
+.share_gallery-link-frame {width:100%; height:48px; margin:0 auto; position:relative; z-index:1;}
+
+.share_gallery-link-frame:after {content:" "; display:block; width:100%; height:48px; position:absolute; background:#cb30ff; right:-5px; bottom:-5px; z-index:1;}
+.share_gallery-link a {background:#3347ff; color:#ffff00; z-index:2; position:absolute; left:0; top:0; display:block; width:100%; height:48px; border:none; font-family:"ABCGravityVariable", sans-serif; font-stretch:60%; font-variation-settings:'wdth' 60; font-size:40px; line-height:53px; text-transform:uppercase; cursor:pointer; text-decoration:none;
+transition:top ease 0.3s, left ease 0.3s; padding:0 8px;
+}
+.share_gallery-link a:hover {left:-5px; top:-5px; text-decoration:none; color:#ffff00;}
+.share_gallery-link a span {display:block; width:100%;}
+
+#demand_thumbs {margin:0 auto; text-align:center;}
+
+
+#demand_thumbs li {
+    padding:5px;
+    vertical-align:top;
+    width:49%;
+}
+#demand_thumbs a {
+display:block;
+position:relative;
+width:100%;
+padding-bottom:100%;
+z-index:1;
+}
+#demand_thumbs a:after {display:block; content:" "; width:100%; height:100%; position:absolute; right:-5px; bottom:-5px; background:#FFFF00; z-index:1;}
+#demand_thumbs .img-thumbnail {
+width:100%;
+height:auto !important;
+padding:0;
+display:block;
+border:none; 
+background-color:transparent; 
+border-radius:0;
+position:absolute;
+top:0;
+left:0;
+transition: top ease 0.3s, left ease 0.3s;
+z-index:9;
+}
+#demand_thumbs a:hover .img-thumbnail {
+left:-3px;
+top:-3px;
+text-decoration:none;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width:375px) {
+
+.share_gallery-link a {font-stretch:68%; font-variation-settings:'wdth' 68;}
+
+}
+
+@media only screen and (min-width:414px) {
+
+.share_gallery-link a {font-stretch:72%; font-variation-settings:'wdth' 72;}
+
+}
+
+@media only screen and (min-width:600px) {
+  
+}
+
+@media only screen and (min-width:720px) {
+
+
+
+
+}
+
+@media only screen and (min-width:960px) {
+
+.modal-dialog {width:742px;}
+
+#myModal .modal-content {background-color:#FEBE01;}
+
+.modal-backdrop.in {
+  opacity:.5;
+}
+  
+#myModal .modal-header .close {float:right; margin:22px 30px 0 0;}
+#myModal .modal-header .close_button {display:block; width:35px; height:35px; background-image:url('../images/modal_close.png'); background-size:contain;}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {height:523px; width:523px; margin:0 auto;}
+#myModal .carousel-control.left .left_arrow {width:26px; height:43px; position:absolute; left:47px;margin:0;top:239px;}
+#myModal .carousel-control.right .right_arrow {width:26px; height:43px;position:absolute;right:47px;margin:0;top:239px;}
+
+#demand_thumbs {margin:0 auto; text-align:center; max-width:730px;}
+#demand_thumbs li {
+    float:left;
+    width:25%;
+}
+
+
+}
+
+@media only screen and (min-width:1024px) {
+
+
+
+
+}
+
+@media only screen and (min-width:1200px) {
+
+
+
+}
+
+@media only screen and (min-width:1300px) {
+
+
+}
+
+@media only screen and (min-width:1900px) {  
+
+}
