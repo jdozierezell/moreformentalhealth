@@ -146,8 +146,8 @@
 <div class="action_content">
 
 <div id="action_nav-links">
-<a href="action.htm#/bills" id="action_nav-bills" class="action_nav-link">BILLS</a>
-<a href="action.htm#/signup/go" id="action_nav-signup" class="action_nav-link">SIGN UP</a>
+<a href="//moreformentalhealth.org/action.htm#/bills" id="action_nav-bills" class="action_nav-link">BILLS</a>
+<a href="//moreformentalhealth.org/action.htm#/signup/go" id="action_nav-signup" class="action_nav-link">SIGN UP</a>
 </div>
 
 </div>
@@ -161,7 +161,20 @@
 <div class="action_content">
 
 <script language="javascript" src="//www.congressweb.com/cweb/js/jquery.congressweb.iframe.js"></script>
-<script language="javascript">$cweb(function(){ $cweb('#iframe').congressweb({ url : '//www.congressweb.com/AFSP', responsive : true }); });</script>
+<script language="javascript">$cweb(function(){ $cweb('#iframe').congressweb({
+  url: '//www.congressweb.com/afsp/402',
+  responsive: true,
+  displayOptions: {
+      show_site_menu: "false",show_action_titles: "true",
+      show_action_descriptions: "true",page_background_color: "#ffffff",
+      text_text_color: "#000000",text_font_family: "Arial",
+      text_font_size: "14",links_text_color: "#ff583b",
+      links_decoration: "none",links_hover_text_color: "#ff583b",
+      links_hover_decoration: "underline",buttons_custom_background_color: "#342f7f",
+      buttons_custom_text_color: "#ffffff",section_title_background_color: "#342f7f",
+      section_title_text_color: "#ffffff",section_title_weight: "bold"
+  }
+}); });</script>
 <div id="iframe"></div>
 
 </div>
