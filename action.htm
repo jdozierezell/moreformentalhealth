@@ -213,15 +213,6 @@
 
 <script src="js/nav.js"></script>
 
-<script type="text/javascript">
-
-$('body').on('click', '.action_nav-link', function() {
-	$('.action_nav-link').removeClass('action_nav-active');	
-	$(this).addClass('action_nav-active');	
-}); 
- 
-</script>
-
 <script>
 
 $.fn.isInViewport = function() {
@@ -243,6 +234,19 @@ $(window).on('resize scroll load', function() {
     
 });
 
+</script>
+
+<script>
+  let hash = window.location.hash;
+  hash = hash.substring(hash.indexOf('/') + 1)
+  if(hash.includes('/')) {
+    hash = hash.substring(0, hash.indexOf('/'))
+  }
+  if (hash.includes('402') || hash.includes('bills') || hash.includes('signup')) {
+    console.log(hash)
+    const active = document.getElementById(`action_nav-${hash}`)
+    active.classList.add('action_nav-active')
+  }
 </script>
 
 <script async src="https://siteimproveanalytics.com/js/siteanalyze_6019066.js"></script>
