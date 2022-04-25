@@ -132,7 +132,7 @@
 
 <div id="action_intro-text">
 <p>It’s time for each of us to advocate for the legislation and policies that we KNOW through research can save lives. Each of our voices makes our message louder, and amplifies the change we can achieve and the lives we can save.</p>
-<p>So get involved. Sign up to be a volunteer mental health and suicide prevention advocate at the AFSP Action Center below, use the <a href="share.htm" target="_self">tools</a> we’ve created to spread the message, and use the hashtag <strong><a href="https://www.instagram.com/explore/tags/moreformentalhealth/" target="_blank" class="hashtag_link">#MoreForMentalHealth</a></strong> to encourage more people to spread the word. </p>
+<p>So get involved. Sign up to be a volunteer mental health and suicide prevention advocate and write letters to the editors of your local papers at the AFSP Action Center below, use the <a href="share.htm" target="_self">tools</a> we’ve created to spread the message, and use the hashtag <strong><a href="https://www.instagram.com/explore/tags/moreformentalhealth/" target="_blank" class="hashtag_link">#MoreForMentalHealth</a></strong> to encourage more people to spread the word. </p>
 </div>
 
 </div>
@@ -146,7 +146,8 @@
 <div class="action_content">
 
 <div id="action_nav-links">
-<a href="//moreformentalhealth.org/action.htm#/bills" id="action_nav-bills" class="action_nav-link" onclick="setTimeout(location.reload.bind(location), 1)">BILLS</a>
+<a href="//moreformentalhealth.org/action.htm#/402/" id="action_nav-402" class="action_nav-link action_nav-active" onclick="setTimeout(location.reload.bind(location), 1)">SEND A LETTER</a>
+<a href="//moreformentalhealth.org/action.htm#/bills" id="action_nav-bills" class="action_nav-link" onclick="setTimeout(location.reload.bind(location), 1)">READ THE BILLS</a>
 <a href="//moreformentalhealth.org/action.htm#/signup/go" id="action_nav-signup" class="action_nav-link" onclick="setTimeout(location.reload.bind(location), 1)">SIGN UP</a>
 </div>
 
@@ -243,7 +244,9 @@ $(window).on('resize scroll load', function() {
     hash = hash.substring(0, hash.indexOf('/'))
   }
   if (hash.includes('402') || hash.includes('bills') || hash.includes('signup')) {
-    console.log(hash)
+    //console.log(hash)
+    const firstactive = document.querySelector('.action_nav-active')
+    firstactive.classList.remove('action_nav-active') 
     const active = document.getElementById(`action_nav-${hash}`)
     active.classList.add('action_nav-active')
   }
