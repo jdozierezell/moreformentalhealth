@@ -14,6 +14,21 @@ sup {vertical-align:baseline; position:relative; top:-0.4em;}
 
 .scaled_demand-content {transform-origin:top left;}
 
+/* Skip to Content */
+
+#skip_content {
+	background: #eaeaea;
+	height: 30px;
+	left: 0;
+	padding: 8px;
+	position: absolute;
+	transform: translateY(-100%);
+	transition: transform 0.3s;
+	color: #262626;
+  z-index: 100;
+}
+#skip_content:focus {transform: translateY(0%);}
+
 /* Site Nav */
 #top_bar {position:fixed; top:0; left:0; right:0; width:100%; z-index:20; height:72px; background:#342f7f;}
 body.nav_opened:before {content:" "; width:100%; height:72px; background:#342f7f; position:fixed; left:0; top:0; z-index:20;}
