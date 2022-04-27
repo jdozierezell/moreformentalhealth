@@ -192,6 +192,9 @@
 #home_time-text p strong {font-family:'AvenirNextLTPro-Bold', Arial, Helvetica, sans-serif; font-weight:400;}
 #home_time-text p a {color:#342f7f; text-decoration:underline;}
 
+#home_time-text p a.home_time-link {color:#342f7f; text-decoration:underline;}
+#home_time-text p a.home_time-link:hover {color:#FFFF00; text-decoration:underline;}
+
 #home_time-text p:last-of-type {margin:0;}
 
 /* Video */
