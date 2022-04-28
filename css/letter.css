@@ -1,0 +1,147 @@
+
+.letter_section {width:100%; position:relative; z-index:1; padding:0 8.17vw;}
+.letter_content {width:100%; position:relative; z-index:1; max-width:1400px; margin:0 auto;}
+
+/* Hero */
+#letter_hero {background:#342f7f;}
+#letter_hero .letter_content {min-height:202px; padding:0;
+  height: calc(100vh - 72px);
+  height: calc( (var(--vh, 1vh) * 100) - 72px);
+}
+
+#letter_hero-wrapper {width:100%; height:calc(100% - 100px); max-height:1400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+#letter_hero-scaled {}
+
+#letter_hero-text {width:100%; font-size:243px; line-height:194px; font-family:"ABCGravityVariable", sans-serif; text-align:left; font-stretch:100%; margin:0; padding:0;}
+#letter_hero-text1 {color:#A2FF00; width:100%; position:relative; display:block;}
+#letter_hero-text1 span {color:#00FFFF;}
+#letter_hero-text2 {color:#FF66FF; width:100%; position:relative; display:block;}
+#letter_hero-text3 {color:#FFFF00; width:100%; position:relative; display:block;}
+#letter_hero-text3 span {color:#FEBE01;}
+#letter_hero-text4 {color:#FF396D; width:100%; position:relative; display:block;}
+
+
+/* Intro */
+#letter_intro {background:#342f7f;}
+#letter_intro .letter_content {max-width:720px;}
+
+#letter_intro-hdr {padding:67px 0 34px 0;}
+#letter_intro-hdr h2 {margin:0; padding:0 12px 0 0; color:#FFFF00; font-size:30px; line-height:33px; font-family:'PaulGroteskSoft-Bold', Arial, Helvetica,sans-serif; font-weight:400;}
+
+#letter_intro-text {max-width:600px; padding:0 0 50px 0; margin:0 auto;}
+#letter_intro-text p {color:#00FFFF; font-size:18px; line-height:24px; font-family:'AvenirNextLTPro-Medium', Arial, Helvetica,sans-serif; margin:0 0 20px 0; font-weight:400;}
+
+#letter_intro-text p:last-of-type {margin:0;}
+
+
+/* Info */
+#letter_info {background:#342f7f;}
+#letter_info .letter_content {max-width:720px;}
+
+#letter_info-hdr {padding:0 0 50px 0;}
+#letter_info-hdr h2 {margin:0; padding:0; color:#FFFF00; font-size:30px; line-height:33px; font-family:'PaulGroteskSoft-Bold', Arial, Helvetica,sans-serif; font-weight:400;}
+
+#letter_info-text {max-width:600px; padding:0 0 50px 0; margin:0 auto;}
+#letter_info-text p {color:#00FFFF; font-size:18px; line-height:24px; font-family:'AvenirNextLTPro-Medium', Arial, Helvetica,sans-serif; margin:0 0 20px 0; font-weight:400;}
+
+#letter_info-text ul { list-style-type: none; font-size:18px; line-height:24px; font-family:'AvenirNextLTPro-Medium', Arial, Helvetica,sans-serif; margin:0 0 36px 0; padding:10px 0 0 1em; font-weight:400; color:#00FFFF;}
+#letter_info-text ul li {margin:0 0 20px 0;padding: 0 0 0 15px;position: relative;}
+#letter_info-text ul li a {color:#00FFFF; text-decoration:underline;}
+#letter_info-text ul li a:hover {color:#FFFF00;}
+li::before {
+    content: '•';
+    position: absolute;
+    left: -.7em;          /* Adjust this value so that it appears where you want. */
+    font-size: 1.1em;      /* Adjust this value so that it appears what size you want. */
+}
+
+
+/* Signatures */
+#letter_signatures {padding:86px 0 0 0;}
+.letter_signature {width:255px; color:#00FFFF; font-family:'AvenirNextLTPro-Medium', Arial, Helvetica,sans-serif; font-size:16px; line-height:23px; margin:0 0 40px 0;}
+.letter_signature img {width:100%; height:auto; margin: 0 0 4px -18px;}
+.letter_signature strong {display:block; font-family:'AvenirNextLTPro-Bold', Arial, Helvetica,sans-serif; font-weight:400;}
+
+#letter_citation {padding:70px 0 50px 0;}
+
+#letter_citation p {font-family:'AvenirNextLTPro-Medium', Arial, Helvetica,sans-serif; font-size:16px; line-height:23px;}
+
+
+/* Media Queries */
+@media only screen and (min-width:375px) {
+
+}
+
+@media only screen and (min-width:400px) {
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+@media only screen and (min-width: 720px) {
+
+#letter_hero .letter_content {
+  height:100vh;
+  height:calc(var(--vh, 1vh) * 100);
+}
+
+#letter_hero-text {font-size:261px; line-height:209px;}
+
+}
+
+@media only screen and (min-width: 960px) {
+
+
+
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+#letter_intro-hdr {padding:67px 0 38px 0;}
+#letter_intro-hdr h2 {font-size:42px; line-height:45px; color:#ffff00;}
+#letter_intro-text p {font-size:24px; line-height:30px;}
+
+#letter_info-hdr {padding:0 0 39px 0;} 
+#letter_info-hdr h2 {font-size:42px; line-height:45px;}
+#letter_intro-text {padding:0 0 40px 0;}
+#letter_info-text p {font-size:24px; line-height:30px;}
+#letter_info-text ul {font-size:24px; line-height:30px; padding: 0 0 0 1em;}
+
+#letter_signatures {padding:94px 0 0 0;}
+.letter_signature-row {}
+.letter_signature {width:50%; font-size:20px; line-height:26px; margin:0 0px 40px 0; float:left; padding:0 15px 0 0;}
+
+#letter_citation p {font-size:20px; line-height:26px;}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+#letter_hero-text {font-size:220px; line-height:176px; padding-top:18px;}
+
+}
+
+@media only screen and (min-width: 1320px) {
+
+body.nav_opened .letter_section {padding:0 5vw;}
+
+
+}
+
+@media only screen and (min-width: 1900px) { 
+
+#letter_hero-text {font-size:452px; line-height:361px;}
+
+}
