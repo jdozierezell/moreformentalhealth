@@ -16,7 +16,6 @@
   transform: translate(-50%, -50%);
 
 }
-#letter_hero-scaled {}
 
 #letter_hero-text {width:100%; font-size:243px; line-height:194px; font-family:"ABCGravityVariable", sans-serif; text-align:left; font-stretch:100%; margin:0; padding:0;}
 #letter_hero-text1 {color:#A2FF00; width:100%; position:relative; display:block;}
@@ -120,7 +119,6 @@ li::before {
 #letter_info-text ul {font-size:24px; line-height:30px; padding: 0 0 0 1em;}
 
 #letter_signatures {padding:94px 0 0 0;}
-.letter_signature-row {}
 .letter_signature {width:50%; font-size:20px; line-height:26px; margin:0 0px 40px 0; float:left; padding:0 15px 0 0;}
 
 #letter_citation p {font-size:20px; line-height:26px;}
